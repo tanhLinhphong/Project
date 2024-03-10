@@ -1,0 +1,10 @@
+
+#about{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+#story{
+    background-color: rgba(4, 2, 2, 0.05);
+}
+#story p{
+    max-width: 600px;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <head>
+        <title>Record Store</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/index.css"> 
+        <link rel="shortcut icon" type="img/png" href="img/OIG2.jpg">
+    </head>
+<body>
+    <header id = "header" class = "carousel slide" data-bs-ride = "carousel" style = "padding-top: 100px;">
+        <div class = "bander d-flex align-items-center">
+            <section class="bander-slider">
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/slide_logo_1.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/slide_logo_2.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/slide_logo_3.webp" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+            </section>
+        </div>
+        <nav class = "navbar navbar-expand-lg bg-dark py-4 fixed-top">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src="img/OIG2.jpg" alt="" style="width: 25px;">
+                    <span class = "text-uppercase text-white fw-lighter ms-2">Rhythm House</span>
+                </a>
+    
+                <div class = "order-lg-2 nav-btns">
+                    <button type = "button" class = " icon btn position-relative btn-outline-secondary">
+                        <i class = "fa fa-search"></i>
+                    </button>
+                    <button type = "button" class = " icon btn position-relative btn-outline-secondary ">
+                        <i class = "fa fa-shopping-cart"></i>
+                        <span class = "position-absolute top-0 start-100 translate-middle badge ">5</span>
+                    </button>
+                    <a href="login.html">
+                        <button type = "button" class = "icon btn position-relative btn-outline-secondary">
+                            <i class = "fa fa-user"></i>
+                        </button>
+                    </a>
+                </div>
+                <button class = "navbar-toggler border-0 bg-white" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                    <ul class = "navbar-nav mx-auto text-center">
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "index.html">Home</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "product.html">Product</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "event.html">Event</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "ArtistList.html">Artist list</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "about-us.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section id = "product" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-4">
+                <h2 class = "position-relative d-inline-block ms-4">Product List</h2>
+            </div>
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 btn-outline-secondary active-filter-btn" data-filter = ".all">All</button>
+                    <button type = "button" class = "btn m-2 btn-outline-secondary" data-filter = ".best">Best Sellers</button>
+                    <button type = "button" class = "btn m-2 btn-outline-secondary" data-filter = ".feat">Featured</button>
+                    <button type = "button" class = "btn m-2 btn-outline-secondary" data-filter = ".new">New Arrival</button>
+                </div>
+                 <div class = "product-list row g-0 gx-0 gy-3">
+                    <div class = "card-item col-md-6 col-lg-4 col-xl-3 p-2" >
+                        <div class = "product-img position-relative overflow-hidden" >
+                            <img src = "img/NzktNzA3Ny5qcGVn.jpeg" class = "w-100" alt="">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                TV ANIMATION SPY X FAMILY ORIGINAL SOUNDTRACK</p>
+                            <span class = "fw-bold d-block">$ 45.50</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "card-item col-md-6 col-lg-4 col-xl-3 p-2" >
+                        <div class = "product-img position-relative overflow-hidden">
+                            <img src = "img/1-84-800x791 (1).jpg" class = "w-100" alt="">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                PERSON TO PERSON  (GREEN)       </p>
+                            <span class = "fw-bold d-block">$ 50.00</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "product-img position-relative overflow-hidden">
+                            <img src = "img/S072.jpg" class = "w-100" alt="">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                KNOWING ME, KNOWING YOU / HAPPY HAWAII</p>
+                            <span class = "fw-bold d-block">$ 10.00</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "product-img position-relative overflow-hidden">
+                            <img src = "img/jp-op-2.webp" class = "w-100" alt="">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                「Đại Lộ Mặt Trời」 mini-CD [JAPAN EDITION]</p>
+                            <span class = "fw-bold d-block">$ 35.50</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "product-img position-relative overflow-hidden">
+                            <img src = "img/31.webp" class = "w-100" alt="">
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                LOI CHOI</p>
+                            <span class = "fw-bold d-block">$ 14.50</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "product-img position-relative overflow-hidden">
+                            <img src = "img/D0176.jpg" class = "w-100" alt="">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                STONE BLUE</p>
+                            <span class = "fw-bold d-block">$ 45.50</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "product-img position-relative overflow-hidden">
+                            <img src = "img/NzEtMjU5OC5qcGVn.jpeg" class = "w-100" alt="">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                A KIND OF BLUES VOLUME ONE (LOS ANGELES BROADCAST 1994)</p>
+                            <span class = "fw-bold d-block">$ 45.50</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                        <div class = "product-img position-relative overflow-hidden">
+                            <img src = "img/ODMtODYyMC5qcGVn.jpeg" class = "w-100" alt="">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <p class = "text-capitalize mt-3 mb-1">
+                                STAR TRACKIN' '76</p>
+                            <span class = "fw-bold d-block">$ 45.50</span>
+                            <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id = "trending" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block text-black">Trending</h2>
+            </div>
+            <div class = "trending-list row g-0 ">
+                <div class = "trending-card col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "trending-img position-relative overflow-hidden">
+                        <img src = "img/NS0yNDIyLmpwZWc.jpeg" class = "w-100" alt="">
+                    </div>
+                    <div class = "text-center ">
+                        <p class = "text-capitalize mt-3 mb-1">
+                            DON'T STOP 'TIL YOU GET ENOUGH</p>
+                        <span class = "fw-bold d-block">$ 45.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "trending-img position-relative overflow-hidden">
+                        <img src = "img/1-78.jpg" class = "w-100" alt="">
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">
+                            COME IN FROM THE RAIN</p>
+                        <span class = "fw-bold d-block">$ 5.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "trending-img position-relative overflow-hidden">
+                        <img src = "img/1-209.jpg" class = "w-100" alt="">
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">
+                            RUNNING ON EMPTY</p>
+                        <span class = "fw-bold d-block">$ 45.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "trending-img position-relative overflow-hidden">
+                        <img src = "img/NzgtMTAzMC5qcGVn.jpeg" class = "w-100" alt="">
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">
+                            JOSE FELICIANO'S GOLDEN ALBUM</p>
+                        <span class = "fw-bold d-block">$ 44.50</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-white">Discount Up To 40%</span>
+                    <h2 class = "mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+                    <a href = "#" class = "btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id = "Event" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Event</h2>
+            </div>
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3 ">
+                    <img src = "img/e1.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title text-black text-center">Rhythms of Summer Music Festival</h4>
+                        <p class = "card-text mt-3 text-black">As the sun blazes overhead and the days stretch into warm, starlit nights, the Rhythms of Summer Music Festival beckons music lovers to immerse themselves in a harmonious celebration. this festival promises an unforgettable experience.</p>
+                        <a href = "#" class = "btn btn-primary mt-3">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "img/e3.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title text-black text-center">Rhythms of Autumn Music Festival</h4>
+                        <p class = "card-text mt-3 text-black">The Rhythms of Autumn Music Festival, hosted by Rhythm House, promises an electrifying experience for music enthusiasts. As the leaves turn golden and the air grows crisp, this festival sets the stage for unforgettable moments.</p>
+                        <a href = "#" class = "btn btn-primary">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "img/e5.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title text-black text-center">H.O.P.E</h4>
+                        <p class = "card-text mt-3  text-black">Breaking Records 2024: ABYSSAL is a unique music competition, organized by the House of OISP Pioneering Elements (H.O.P.E.) and Rhythm House. With the theme “ABYSSAL”, the contest invites you to discover your inner musical potential</p>
+                        <a href = "#" class = "btn btn-primary mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead">Rhythm House</p>
+                    <p>Rhythm House is a record store in Hanoi specializing in house music. Founded in 2012 by two DJs and music producers, Rhythm House quickly became a favorite destination for domestic and foreign music lovers.
+                       The store has a diverse collection of house music records, from classics to underground hits. Rhythm House also has a listening room so customers can experience music before purchasing.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "img/pexels-photo-7644806.jpg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+         
+        </div>
+    </section>
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Rhythm house</a>
+                    <p class = "text-white  mt-3">Rhythm House-Where Passion for Vinyl Connects</p>
+                </div>
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none t">
+                                <i class = "fas fa-chevron-right me-1"></i> Product
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Event
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                           8A,Ton That Huyet,HaNoi
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Rhythm.support@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2d">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +849999999
+                        </span>
+                    </div>
+                </div>
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none  fs-4 me-4"><i class = "fab fa-facebook-f"></i> </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none  fs-4 me-4"><i class = "fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none fs-4 me-4"><i class = "fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                  <div class="text-center">
+                    <p>Copyright @Group3</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

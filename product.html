@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <head>
+        <title>Product</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/product.css">
+         <link rel="stylesheet" href="css/index.css">
+        
+        <link rel="shortcut icon" type="img/png" href="img/OIG2.jpg">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <nav class = "navbar navbar-expand-lg bg-dark py-4 fixed-top">
+            <div class = "container">
+                <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                    <img src="img/OIG2.jpg" alt="" style="width: 25px;">
+                    <span class = "text-uppercase text-white fw-lighter ms-2">Rhythm House</span>
+                </a>
+    
+                <div class = "order-lg-2 nav-btns">
+                    <button type = "button" class = " icon btn position-relative btn-outline-secondary">
+                        <i class = "fa fa-search"></i>
+                    </button>
+                    <button type = "button" class = " icon btn position-relative btn-outline-secondary ">
+                        <i class = "fa fa-shopping-cart"></i>
+                        <span class = "position-absolute top-0 start-100 translate-middle badge ">5</span>
+                    </button>
+                    <a href="login.html">
+                        <button type = "button" class = "icon btn position-relative btn-outline-secondary">
+                            <i class = "fa fa-user"></i>
+                        </button>
+                    </a>
+                </div>
+                <button class = "navbar-toggler border-0 bg-white" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                    <ul class = "navbar-nav mx-auto text-center">
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "index.html">Home</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "product.html">Product</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "event.html">Event</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "ArtistList.html">Artist list</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "about-us.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header id="header">
+            <div class="breadcrumb-area container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-3 d-flex flex-wrap">
+                    <ul class="breadcrumb pt-2">
+                        <li class="breadcrumb-item"><a class="text-secondary" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Product</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </header>
+
+        
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="custom-list">
+                        <div class="new-custom-list">
+                            <span><a href="#cd-dvd">CD/DVD</a></span>
+                            <span><a href="#vinly">Vinly</a></span>
+                            <span><a href="#books">Books</a></span>
+                        </div>
+                        <div class="elementor-widget-container">
+                            <h1 class="elementor-heading-title elementer-size-defaultl">PRODUCT</h1>
+                        </div>
+                        <div class="woof_container">
+                            <div class="woof_block_html_items">
+                                <div class="custom-select">
+                                    <span id="selected-option-1" onclick="toggleOptions('options-list-1')">Caterory</span>
+                                    <ul class="options-list" id="options-list-1">
+                                        <li data-value="rock">Rock </li>
+                                        <li data-value="electronic">Electronic </li>
+                                        <li data-value="pop">Pop</li>
+                                        <li data-value="movie">Movie</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="woof_t_pa_the-loai" value="product">
+                            
+                            <div class="woof_block_html_items">
+                                <div class="custom-select">
+                                    <span id="selected-option-2" onclick="toggleOptions('options-list-2')">Time Liness</span>
+                                    <ul class="options-list" id="options-list-2">
+                                        <li data-value="1">90s</li>
+                                        <li data-value="00s">80s (1507)</li>
+                                        <li data-value="70s">70s (1)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="woof_t_pa_thoi_ky" value="product">
+                        
+                            <div class="woof_block_html_items">
+                                <div class="custom-select">
+                                    <span id="selected-option-3" onclick="toggleOptions('options-list-3')">Perform</span>
+                                    <ul class="options-list" id="options-list-3">
+                                        <li data-value="1">Solo</li>
+                                        <li data-value="2">Bands</li>
+                                        <li data-value="3">3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input type="hidden" name="woof_t_pa_" value="">
+                        </div>
+                    </div>
+                    <script>
+                        function toggleOptions(optionsListId) {
+                            var optionsList = document.getElementById(optionsListId);
+                    
+                            if (optionsList.style.display === 'none' || optionsList.style.display === '') {
+                                var rect = document.getElementById(optionsListId.replace("options-list-", "selected-option-")).getBoundingClientRect();
+                                optionsList.style.top = rect.height + 'px';
+                                optionsList.style.display = 'block';
+                            } else {
+                                optionsList.style.display = 'none';
+                            }
+                        }
+                    </script>
+
+                    <div class="col-9">
+                        <hr>
+                        <div class="product-list row text-dark">
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <a href="thongtinsp.html"><img src = "img/NzktNzA3Ny5qcGVn.jpeg" class = "w-100" alt=""></a>
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        TV ANIMATION SPY X FAMILY ORIGINAL SOUNDTRACK</p>
+                                    <span class = "fw-bold d-block">$ 45.50</span>
+                                    <a href = "" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "card-item col-md-6 col-lg-4 col-xl-3 p-2" >
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/1-84-800x791 (1).jpg" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        PERSON TO PERSON  (GREEN)       </p>
+                                    <span class = "fw-bold d-block">$ 50.00</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/S072.jpg" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        KNOWING ME, KNOWING YOU / HAPPY HAWAII</p>
+                                    <span class = "fw-bold d-block">$ 10.00</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/jp-op-2.webp" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        「Đại Lộ Mặt Trời」 mini-CD [JAPAN EDITION]</p>
+                                    <span class = "fw-bold d-block">$ 35.50</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/31.webp" class = "w-100" alt="">
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        LOI CHOI</p>
+                                    <span class = "fw-bold d-block">$ 14.50</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/D0176.jpg" class = "w-100" alt="">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        STONE BLUE</p>
+                                    <span class = "fw-bold d-block">$ 45.50</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/NzEtMjU5OC5qcGVn.jpeg" class = "w-100" alt="">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        A KIND OF BLUES VOLUME ONE (LOS ANGELES BROADCAST 1994)</p>
+                                    <span class = "fw-bold d-block">$ 45.50</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                                <div class = "product-img position-relative overflow-hidden">
+                                    <img src = "img/ODMtODYyMC5qcGVn.jpeg" class = "w-100" alt="">
+                                    <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                </div>
+                                <div class = "text-center">
+                                    <p class = "text-capitalize mt-3 mb-1">
+                                        STAR TRACKIN' '76</p>
+                                    <span class = "fw-bold d-block">$ 45.50</span>
+                                    <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <hr>
+
+                        <div class="pagination-area">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Pre</a></li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="bg-dark py-5">
+            <div class = "container">
+                <div class = "row text-white g-4">
+                    <div class = "col-md-6 col-lg-3">
+                        <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Rhythm house</a>
+                        <p class = "text-white  mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                    </div>
+                    <div class = "col-md-6 col-lg-3">
+                        <h5 class = "fw-light">Links</h5>
+                        <ul class = "list-unstyled">
+                            <li class = "my-3">
+                                <a href = "#" class = "text-white text-decoration-none">
+                                    <i class = "fas fa-chevron-right me-1"></i> Home
+                                </a>
+                            </li>
+                            <li class = "my-3">
+                                <a href = "product.html" class = "text-white text-decoration-none t">
+                                    <i class = "fas fa-chevron-right me-1"></i> Product
+                                </a>
+                            </li>
+                            <li class = "my-3">
+                                <a href = "#" class = "text-white text-decoration-none">
+                                    <i class = "fas fa-chevron-right me-1"></i> Event
+                                </a>
+                            </li>
+                            <li class = "my-3">
+                                <a href = "#" class = "text-white text-decoration-none">
+                                    <i class = "fas fa-chevron-right me-1"></i> Membership
+                                </a>
+                            </li>
+                            <li class = "my-3">
+                                <a href = "#" class = "text-white text-decoration-none">
+                                    <i class = "fas fa-chevron-right me-1"></i> About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "col-md-6 col-lg-3">
+                        <h5 class = "fw-light mb-3">Contact Us</h5>
+                        <div class = "d-flex justify-content-start align-items-start my-2">
+                            <span class = "me-3">
+                                <i class = "fas fa-map-marked-alt"></i>
+                            </span>
+                            <span class = "fw-light">
+                            8A,Ton That Huyet,HaNoi
+                            </span>
+                        </div>
+                        <div class = "d-flex justify-content-start align-items-start my-2">
+                            <span class = "me-3">
+                                <i class = "fas fa-envelope"></i>
+                            </span>
+                            <span class = "fw-light">
+                                Rhythm.support@gmail.com
+                            </span>
+                        </div>
+                        <div class = "d-flex justify-content-start align-items-start my-2d">
+                            <span class = "me-3">
+                                <i class = "fas fa-phone-alt"></i>
+                            </span>
+                            <span class = "fw-light">
+                                +849999999
+                            </span>
+                        </div>
+                    </div>
+                    <div class = "col-md-6 col-lg-3">
+                        <h5 class = "fw-light mb-3">Follow Us</h5>
+                        <div>
+                            <ul class = "list-unstyled d-flex">
+                                <li>
+                                    <a href = "#" class = "text-white text-decoration-none  fs-4 me-4"><i class = "fab fa-facebook-f"></i> </a>
+                                </li>
+                                <li>
+                                    <a href = "#" class = "text-white text-decoration-none  fs-4 me-4"><i class = "fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href = "#" class = "text-white text-decoration-none fs-4 me-4"><i class = "fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="row align-items-center">
+                    <div class="text-center">
+                        <p>Copyright @Group3</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
