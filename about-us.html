@@ -13,31 +13,7 @@
     </head>
 <body>
     <header id = "header" class = "carousel slide" data-bs-ride = "carousel" style = "padding-top: 100px;">
-        <div class = "bander d-flex align-items-center">
-            <section class="bander-slider">
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="img/slide_logo_1.webp" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/slide_logo_2.webp" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/slide_logo_3.webp" class="d-block w-100" alt="...">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                </div>
-            </section>
-        </div>
+       
         <nav class = "navbar navbar-expand-lg bg-dark py-4 fixed-top">
             <div class = "container">
                 <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
@@ -49,10 +25,12 @@
                     <button type = "button" class = " icon btn position-relative btn-outline-secondary">
                         <i class = "fa fa-search"></i>
                     </button>
-                    <button type = "button" class = " icon btn position-relative btn-outline-secondary ">
-                        <i class = "fa fa-shopping-cart"></i>
-                        <span class = "position-absolute top-0 start-100 translate-middle badge ">5</span>
-                    </button>
+
+                    <a href="cart.html">
+                        <button type = "button" class = "icon btn position-relative btn-outline-secondary">
+                            <i class = "fa fa-shopping-cart"></i>
+                        </button>
+                    </a>
                     <a href="login.html">
                         <button type = "button" class = "icon btn position-relative btn-outline-secondary">
                             <i class = "fa fa-user"></i>
@@ -77,10 +55,13 @@
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "ArtistList.html">Artist list</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
+                        <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "about-us.html">About us</a>
+                        </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "contact_us.html">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -92,9 +73,19 @@
         <div class = "container">
             <div class = "d-flex flex-column align-items-center justify-content-center">
                 <div class = "title text-center pt-3 pb-5">
-                    <h2 class = "position-relative d-inline-block ms-4">THE STORY OF RHYTHM House</h2>
+                    <h2 class = "position-relative d-inline-block ms-4">THE STORY OF RHYTHM HOUSE</h2>
                 </div>
-                <p class = "text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus esse odio id quidem quam, porro, perspiciatis eaque consequatur doloremque omnis explicabo, iure rem voluptatum dolores saepe tenetur nisi nemo. Iure.</p>
+                <p class = "text-center text-muted">Rhythm House is a vinyl record shop founded by four music-loving friends. We are passionate about sharing our love of music with the world, and we believe that vinyl is the best way to experience the true sound of music.
+
+                    We offer a wide selection of new and used vinyl records, from classic rock to jazz to electronica. We also have a wide variety of turntables, speakers, and other audio equipment to help you get the most out of your vinyl collection.
+                    
+                    We are committed to providing our customers with the best possible shopping experience. Our knowledgeable staff is always happy to help you find the perfect records for your collection. We also offer a variety of services, such as record cleaning and repair, to help you keep your records in good condition.
+                    
+                    We are more than just a vinyl record shop. We are a community of music lovers. We host in-store events, such as live music performances and listening parties, to bring our community together.
+                    
+                    We are proud to be a part of the local community. We support local and independent artists by selling their records in our shop. We also donate a portion of our proceeds to local charities.
+                    
+                    We invite you to come visit Rhythm House and experience the joy of vinyl. We are located at 8A Ton That Huyet, Ha Noi, VietNam. Our hours are Monday-Saturday from 10am-6pm and Sunday from 12pm-5pm.</p>
             </div>
         </div>
     </section>
@@ -105,8 +96,17 @@
                     <div class = "title pt-3 pb-5">
                         <h2 class = "position-relative d-inline-block ms-4">CRITERIA FOR COMMITMENT</h2>
                     </div>
-                    <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                    <ul class = "lead text-muted">A commitment to quality:
+                        <li class="text-black">
+                            Sell only high-quality vinyl records in good condition
+                        </li>
+                        <li class="text-black">
+                            Offer a wide variety of genres and styles to choose from
+                        </li>
+                        <li class="text-black">
+                            Provide accurate and detailed information about each record
+                        </li>
+                    </ul>
                 </div>
                 <div class = "col-lg-6 order-lg-1">
                     <img src = "img/pexels-photo-7644806.jpg" alt = "" class = "img-fluid">
@@ -119,7 +119,7 @@
             <div class = "row text-white g-4">
                 <div class = "col-md-6 col-lg-3">
                     <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Rhythm house</a>
-                    <p class = "text-white  mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                    <p class = "text-white  mt-3">Rhythm House-Where Passion for Vinyl Connects</p>
                 </div>
                 <div class = "col-md-6 col-lg-3">
                     <h5 class = "fw-light">Links</h5>
@@ -141,7 +141,17 @@
                         </li>
                         <li class = "my-3">
                             <a href = "#" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Membership
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none">
                                 <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none">
+                                <i class = "fas fa-chevron-right me-1"></i> Contact Us
                             </a>
                         </li>
                     </ul>

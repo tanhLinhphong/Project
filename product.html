@@ -9,12 +9,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/product.css">
          <link rel="stylesheet" href="css/index.css">
-        
         <link rel="shortcut icon" type="img/png" href="img/OIG2.jpg">
 </head>
 <body>
     <div class="wrapper">
-        
         <nav class = "navbar navbar-expand-lg bg-dark py-4 fixed-top">
             <div class = "container">
                 <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
@@ -26,10 +24,12 @@
                     <button type = "button" class = " icon btn position-relative btn-outline-secondary">
                         <i class = "fa fa-search"></i>
                     </button>
-                    <button type = "button" class = " icon btn position-relative btn-outline-secondary ">
-                        <i class = "fa fa-shopping-cart"></i>
-                        <span class = "position-absolute top-0 start-100 translate-middle badge ">5</span>
-                    </button>
+
+                    <a href="cart.html">
+                        <button type = "button" class = "icon btn position-relative btn-outline-secondary">
+                            <i class = "fa fa-shopping-cart"></i>
+                        </button>
+                    </a>
                     <a href="login.html">
                         <button type = "button" class = "icon btn position-relative btn-outline-secondary">
                             <i class = "fa fa-user"></i>
@@ -54,14 +54,18 @@
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "ArtistList.html">Artist list</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
-                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
+                        <a class = "nav-link text-uppercase text-white rounded-pill" href = "membership.html">Membership</a>
                         </li>
                         <li class = "nav-item px-2 py-2">
                             <a class = "nav-link text-uppercase text-white rounded-pill" href = "about-us.html">About us</a>
                         </li>
+                        <li class = "nav-item px-2 py-2">
+                            <a class = "nav-link text-uppercase text-white rounded-pill" href = "contact_us.html">Contact us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
+        </nav>
         </nav>
         <header id="header">
             <div class="breadcrumb-area container-fluid">
@@ -258,12 +262,12 @@
         </div>
 
 
-        <footer class="bg-dark py-5">
+        <footer class = "bg-dark py-5">
             <div class = "container">
                 <div class = "row text-white g-4">
                     <div class = "col-md-6 col-lg-3">
                         <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Rhythm house</a>
-                        <p class = "text-white  mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                        <p class = "text-white  mt-3">Rhythm House-Where Passion for Vinyl Connects</p>
                     </div>
                     <div class = "col-md-6 col-lg-3">
                         <h5 class = "fw-light">Links</h5>
@@ -274,7 +278,7 @@
                                 </a>
                             </li>
                             <li class = "my-3">
-                                <a href = "product.html" class = "text-white text-decoration-none t">
+                                <a href = "#" class = "text-white text-decoration-none t">
                                     <i class = "fas fa-chevron-right me-1"></i> Product
                                 </a>
                             </li>
@@ -293,6 +297,11 @@
                                     <i class = "fas fa-chevron-right me-1"></i> About Us
                                 </a>
                             </li>
+                            <li class = "my-3">
+                                <a href = "#" class = "text-white text-decoration-none">
+                                    <i class = "fas fa-chevron-right me-1"></i> Contact Us
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class = "col-md-6 col-lg-3">
@@ -302,7 +311,7 @@
                                 <i class = "fas fa-map-marked-alt"></i>
                             </span>
                             <span class = "fw-light">
-                            8A,Ton That Huyet,HaNoi
+                               8A,Ton That Huyet,HaNoi
                             </span>
                         </div>
                         <div class = "d-flex justify-content-start align-items-start my-2">
@@ -340,14 +349,13 @@
                     </div>
                     <hr class="mb-4">
                     <div class="row align-items-center">
-                    <div class="text-center">
+                      <div class="text-center">
                         <p>Copyright @Group3</p>
-                    </div>
+                      </div>
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
